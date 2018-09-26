@@ -28,4 +28,4 @@
 
   #- platform: emby
    # host: !secret emby_host
-    #api_key: !secret emby_api
+    # api_key: !secret emby_api
