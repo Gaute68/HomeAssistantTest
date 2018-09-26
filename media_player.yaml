@@ -6,10 +6,10 @@
         ## Kodi
         ##########################################################
 
-  - platform: kodi
-    host: !secret nvidia_shield_host
-    username: !secret kodi_user
-    password: !secret kodi_pass
+#  - platform: kodi
+#    host: !secret nvidia_shield_host
+#    username: !secret kodi_user
+#    password: !secret kodi_pass
 
         ##########################################################
         ## Sonos
@@ -26,6 +26,6 @@
         ## Emby
         ##########################################################
 
-  - platform: emby
-    host: !secret emby_host
-    api_key: !secret emby_api
+  #- platform: emby
+   # host: !secret emby_host
+    #api_key: !secret emby_api
