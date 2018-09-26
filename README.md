@@ -106,12 +106,7 @@
 
 # Interface
 ![UI](images/home-screenshot.jpg)
-![UI](images/lights-screenshot.jpg)
-![UI](images/first-floor-screenshot.jpg)
-![UI](images/second-floor-screenshot.jpg)
-![UI](images/media-screenshot.jpg)
-![UI](images/automation-screenshot.jpg)
-![UI](images/sensor-screenshot.jpg)
+
 
 # Grafana Monitoring Front-end
 ![UI](images/homeassistant_grafana.jpg)
