@@ -44,8 +44,6 @@ http:
   login_attempts_threshold: 3
   use_x_forwarded_for: True
 
-influxdb:
-  host: !secret nas2_host
 
 #################################################################
 ## Components
@@ -56,38 +54,7 @@ google:
   client_secret: !secret google_oauth_secret
   track_new_calendar: false
 
-#amcrest:
-#  - host: !secret amcrest_living_host
-#    name: Living Room
-#    username: !secret amcrest_user
-#    password: !secret amcrest_pass
-#    sensors:
-#      - motion_detector
-#    stream_source: rtsp
 
-#  - host: !secret amcrest_garage_host
-#    name: Garage
-#    username: !secret amcrest_user
-#    password: !secret amcrest_pass
-#    sensors:
-#      - motion_detector
-#    stream_source: rtsp
-
-#  - host: !secret amcrest_chalkboard_host
-#    name: Chalkboard Room
-#    username: !secret amcrest_user
-#    password: !secret amcrest_pass
-#    sensors:
-#      - motion_detector
-#    stream_source: rtsp
-
-#  - host: !secret amcrest_shop_host
-#    name: Shop
-#    username: !secret amcrest_user
-#    password: !secret amcrest_pass
-#    sensors:
-#      - motion_detector
-#    stream_source: rtsp
 
 emulated_hue:
 #  type: alexa
@@ -112,42 +79,31 @@ nest:
   client_id: !secret nest_client_id
   client_secret: !secret nest_client_secret
 
-octoprint:
-  host: !secret octopi_host
-  api_key: !secret octoprint_api
-  bed: true
-  number_of_tools: 2
 
-ring:
-  username: !secret ring_username
-  password: !secret ring_password
 
-shell_command:
-  query_cox_data_usage: 'python /home/homeassistant/.homeassistant/cox_usage.py'
-  influxdb_state_injection: /bin/bash -c "sh /home/pi/update_influx_states.sh"
+#ring:
+ # username: !secret ring_username
+  #password: !secret ring_password
 
-sonos:
-  media_player:
-    hosts:
-      - !secret sonos_chalkboard_host
-      - !secret sonos_den_host
-      - !secret sonos_kitchen_host
-      - !secret sonos_office_host
+
+#sonos:
+ # media_player:
+  #  hosts:
+   #   - !secret sonos_chalkboard_host
+    #  - !secret sonos_den_host
+     # - !secret sonos_kitchen_host
+      #- !secret sonos_office_host
 
 tts:
   - platform: google
     cache: true
     time_memory: 300
 
-wemo:
-  static:
-    - !secret wemo_mini_cactus_host
-    - !secret wemo_insight_host
 
-xiaomi_aqara:
-  discovery_retry: 5
-  gateways:
-    - key: !secret xiaomi_key
+#xiaomi_aqara:
+ # discovery_retry: 5
+  #gateways:
+   # - key: !secret xiaomi_key
 
 zwave:
   usb_path: /dev/ttyACM0
